@@ -1,0 +1,5 @@
+<h1>My TO DO List</h1>
+<ul>
+ <li *ngFor='let list of lists'>{{list.name}}{{list.dueDate|date}}</li>
+</ul>
+<p *ngIf='lists.length < 15'>You have very few things to do. Get a <strong>LIFE!</strong></p>
